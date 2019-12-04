@@ -5,7 +5,7 @@ Source repository for the Factorio mod Friend Blueprints
 
 Friend Blueprints is a mod for the video game [Factorio](https://factorio.com/).  It adds a new type of blueprinting tool called a Friend Blueprint, which works like the vanilla blueprint, except that it also select entities owned by forces that are friendly to the player (vanilla blueprints only select entities owned by the player force).  Due to some technical limitations, the friend blueprint doesn't work _exactly_ like the vanilla blueprint, but I hope to overcome these limitations some day.
 
-_TODO: screenshot_
+![The vanilla blueprint tool (left) only selects the top row of text plates (PLAYER).  The friends blueprint tool selects the top two rows (PLAYER + FRIEND)](/screenshots/readme-1.png)
 
 Additional information about how the mod works, features, and limitations can be found on the [Factorio mod portal page](https://mods.factorio.com/mod/FriendBlueprints)
 

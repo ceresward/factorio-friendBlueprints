@@ -1,8 +1,6 @@
 script.on_event(defines.events.on_player_selected_area, 
     function(event)
         if event.item == 'friends-blueprint' and #event.entities > 0 then
-            -- log(serpent.block(event))
-            
             -- Emulates vanilla blueprint behavior by doing the following:
             -- 1) Create a new blueprint and puts it in the player's hand
             -- 2) Copy blueprint entities from the selection area into the blueprint (adjusting for position)
@@ -38,7 +36,9 @@ script.on_event(defines.events.on_player_selected_area,
                         -- Position in blueprint should be relative to the center of the entity area
                         x = entity.position.x - entity_area.center.x,
                         y = entity.position.y - entity_area.center.y
-                    }
+                    },
+                    variation = entity.graphics_variation,
+                    -- TODO: try and identify other properties that may need to be copied over
                 })
             end
             
@@ -49,3 +49,13 @@ script.on_event(defines.events.on_player_selected_area,
         end
     end
 )
+
+-- This script can help debug which entity properties are missing as compared to vanilla blueprints
+-- script.on_event(defines.events.on_player_cursor_stack_changed,
+--     function(event)
+--         local player = game.get_player(event.player_index)
+--         if player.cursor_stack and player.cursor_stack.is_blueprint then
+--             log(serpent.block(player.cursor_stack.get_blueprint_entities()))
+--         end
+--     end
+-- )
