@@ -11,8 +11,9 @@ Additional information about how the mod works, features, and limitations can be
 
 ## Roadmap
 
-### 1.0
-- [ ] Initial mod release
+### Unscheduled
+- [ ] Make Friends Blueprint behave more like vanilla blueprints (i.e. open in blueprint editor instead of creating a blueprint and placing it in the player's hand)
+- [ ] Add Friends variants of the Cut/Copy/Paste tools
 
 ## Release Notes
 
