@@ -14,7 +14,7 @@ friendsShortcut.icon = {
     filename = "__FriendBlueprints__/graphics/icons/friends-blueprint.png";
     size = 32
 }
-friendsShortcut.item_to_create = "friends-blueprint"
+friendsShortcut.item_to_spawn = "friends-blueprint"
 
 data:extend{
     friendsBlueprint,
