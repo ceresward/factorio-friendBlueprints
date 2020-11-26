@@ -1,11 +1,11 @@
 {
     "name": "FriendBlueprints",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "title": "Friend Blueprints",
     "author": "ceresward",
     "contact": "https://reddit.com/u/ceresward",
     "homepage": "https://github.com/ceresward/factorio-friendBlueprints",
-    "factorio_version": "1.0",
-    "dependencies": ["base >= 1.0"],
+    "factorio_version": "1.1",
+    "dependencies": ["base >= 1.1"],
     "description": "Adds a new type of blueprinting tool called a Friend Blueprint, which works just like a vanilla blueprint except that it also select entities from other forces that are friendly to the player force"
 }
