@@ -64,6 +64,15 @@ script.on_event(defines.events.on_player_selected_area,
             player.cursor_stack.set_stack{name='blueprint'}
             player.cursor_stack.set_blueprint_entities(blueprint_entities)
             -- player.opened = player.cursor_stack
+
+            -- TODO: ideas for improvement
+            -- A. Instead of trying to build the blueprint entity data myself, do something like this:
+            --    1. Iterate through selected entities to discover selected forces
+            --    2. Iterate through discovered forces, using create_blueprint > get_blueprint_entities > clear_blueprint to capture blueprint entity data for that force
+            --    3. Concatenate discovered blueprint entities during iteration, and once done, simply call set_blueprint_entities to set the final data on the blueprint
+            -- B. Revisit how blueprints are opened.  Look at LuaGameScript.create_inventory(); should be able to use it to create and open a blueprint from outside the cursor.
+            --    That would fix the 'weirdness' with opening the blueprint.  When the blueprint GUI is closed, it can be transferred to the cursor, just like with regular blueprints
+
         end
     end
 )
